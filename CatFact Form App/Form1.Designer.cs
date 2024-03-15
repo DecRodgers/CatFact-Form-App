@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             button1 = new Button();
             groupBox1 = new GroupBox();
             CatFactTextlbl = new Label();
@@ -61,13 +62,13 @@
             // CatFactTextlbl
             // 
             CatFactTextlbl.AutoSize = true;
-            CatFactTextlbl.Location = new Point(8, 19);
-            CatFactTextlbl.Name = "CatFactTextlbl";
-            CatFactTextlbl.Size = new Size(38, 15);
-            CatFactTextlbl.MaximumSize = new Size(600, 0);
             CatFactTextlbl.Dock = DockStyle.Fill;
+            CatFactTextlbl.Location = new Point(3, 19);
+            CatFactTextlbl.MaximumSize = new Size(600, 0);
+            CatFactTextlbl.Name = "CatFactTextlbl";
+            CatFactTextlbl.Size = new Size(197, 15);
             CatFactTextlbl.TabIndex = 0;
-            CatFactTextlbl.Text = "label1";
+            CatFactTextlbl.Text = " Click the button to fetch a Cat Fact!";
             CatFactTextlbl.Click += CatFactTextlbl_Click;
             // 
             // groupBox2
@@ -86,9 +87,9 @@
             CatFactLengthlbl.AutoSize = true;
             CatFactLengthlbl.Location = new Point(6, 19);
             CatFactLengthlbl.Name = "CatFactLengthlbl";
-            CatFactLengthlbl.Size = new Size(38, 15);
+            CatFactLengthlbl.Size = new Size(10, 15);
             CatFactLengthlbl.TabIndex = 0;
-            CatFactLengthlbl.Text = "label1";
+            CatFactLengthlbl.Text = " ";
             // 
             // Form1
             // 
@@ -98,8 +99,9 @@
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Controls.Add(button1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
-            Text = "Form1";
+            Text = "CatFacts";
             Load += Form1_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
