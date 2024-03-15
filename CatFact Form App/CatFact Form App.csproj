@@ -14,8 +14,4 @@
     <Content Include="cat_icon_138789.ico" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\CatFact Api Test\ConsoleApp1\ConsoleApp1\CatFact-API.csproj" />
-  </ItemGroup>
-
 </Project>
