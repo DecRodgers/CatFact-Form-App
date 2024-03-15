@@ -95,12 +95,16 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(655, 237);
+            ClientSize = new Size(655, 239);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Controls.Add(button1);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MaximumSize = new Size(671, 278);
+            MinimumSize = new Size(671, 278);
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "CatFacts";
             Load += Form1_Load;
             groupBox1.ResumeLayout(false);
